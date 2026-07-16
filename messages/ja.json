@@ -1,0 +1,21 @@
+{
+  "header": {
+    "signIn": "サインイン",
+    "accountMenuLabel": "アカウントメニュー",
+    "settings": "設定",
+    "signOut": "サインアウト"
+  },
+  "qr": {
+    "imageAlt": "QRコード",
+    "regenerate": "再生成",
+    "settingsMenuLabel": "メニュー",
+    "autoRegenerate": {
+      "label": "自動生成"
+    },
+    "interval": {
+      "label": "更新間隔({seconds}秒)",
+      "seconds": "{seconds}秒",
+      "customPlaceholder": "秒数を入力"
+    }
+  }
+}
