@@ -27,8 +27,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@Hashibutogarasu/ui';
-import { apiFetch } from '@Hashibutogarasu/utils/client';
+} from '@karasu-lab/ui';
+import { apiFetch } from '@karasu-lab/utils/client';
 
 export interface HistoryTableItem {
   id: string;

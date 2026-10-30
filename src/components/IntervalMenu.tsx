@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { useTranslations } from 'next-intl';
-import { MenuItem, TextInputMenuItem, ScrollableSubMenu } from '@Hashibutogarasu/ui';
+import { MenuItem, TextInputMenuItem, ScrollableSubMenu } from '@karasu-lab/ui';
 
 const PRESET_STEP_SECONDS = 10;
 const INITIAL_PRESET_COUNT = 10;

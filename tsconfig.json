@@ -20,12 +20,12 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@Hashibutogarasu/challengetoken": ["../../packages/challengetoken/src/index.ts"],
-      "@Hashibutogarasu/db": ["../../packages/db/src/index.ts"],
-      "@Hashibutogarasu/db/schema": ["../../packages/db/src/schema/index.ts"],
-      "@Hashibutogarasu/ui": ["../../packages/ui/src/index.ts"],
-      "@Hashibutogarasu/ui/redis": ["../../packages/ui/src/components/redis-provider.tsx"],
-      "@Hashibutogarasu/utils/server": ["../../packages/utils/src/server/index.ts"]
+      "@karasu-lab/challengetoken": ["../../packages/challengetoken/src/index.ts"],
+      "@karasu-lab/db": ["../../packages/db/src/index.ts"],
+      "@karasu-lab/db/schema": ["../../packages/db/src/schema/index.ts"],
+      "@karasu-lab/ui": ["../../packages/ui/src/index.ts"],
+      "@karasu-lab/ui/redis": ["../../packages/ui/src/components/redis-provider.tsx"],
+      "@karasu-lab/utils/server": ["../../packages/utils/src/server/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts", "**/*.mts"],

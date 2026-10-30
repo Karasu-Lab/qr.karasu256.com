@@ -3,8 +3,8 @@ import 'server-only';
 import { headers } from 'next/headers';
 import { createId } from '@paralleldrive/cuid2';
 import QRCode from 'qrcode';
-import { useRedis } from '@Hashibutogarasu/ui/redis';
-import { embedChallengeToken } from '@Hashibutogarasu/challengetoken';
+import { useRedis } from '@karasu-lab/ui/redis';
+import { embedChallengeToken } from '@karasu-lab/challengetoken';
 import {
   MissingEnvError,
   deleteUploadedImage,
@@ -13,9 +13,9 @@ import {
   uploadImage,
   uploadImageAnonymous,
   verifyAppJwt,
-} from '@Hashibutogarasu/utils/server';
-import { getDb } from '@Hashibutogarasu/db';
-import { qrGenerations } from '@Hashibutogarasu/db/schema';
+} from '@karasu-lab/utils/server';
+import { getDb } from '@karasu-lab/db';
+import { qrGenerations } from '@karasu-lab/db/schema';
 
 const QR_IMAGE_WIDTH = 512;
 const CACHE_TTL_SECONDS = 60 * 60 * 24;
@@ -62,7 +62,7 @@ interface ResolvedSession {
  * bearer token. Prefers a caller-supplied JWT (verified against
  * api-auth.karasu256.com's JWKS via `verifyAppJwt`) over `getSessionUser`'s
  * `Cookie`-forwarding check, since this app's own server can't rely on
- * that cookie reaching it — see `SessionProvider` in `@Hashibutogarasu/ui`,
+ * that cookie reaching it — see `SessionProvider` in `@karasu-lab/ui`,
  * which mints that JWT as the single source of truth for "who is logged
  * in".
  */

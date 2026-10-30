@@ -1,8 +1,8 @@
 import 'server-only';
 
 import { and, desc, eq, inArray, sql } from 'drizzle-orm';
-import { getDb } from '@Hashibutogarasu/db';
-import { qrGenerations } from '@Hashibutogarasu/db/schema';
+import { getDb } from '@karasu-lab/db';
+import { qrGenerations } from '@karasu-lab/db/schema';
 
 export interface HistoryItem {
   id: string;

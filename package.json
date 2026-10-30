@@ -13,11 +13,11 @@
     "db:migrate:prod": "dotenv -e .env.production -- drizzle-kit migrate"
   },
   "dependencies": {
-    "@Hashibutogarasu/challengetoken": "workspace:*",
-    "@Hashibutogarasu/db": "workspace:*",
-    "@Hashibutogarasu/types": "workspace:*",
-    "@Hashibutogarasu/ui": "workspace:*",
-    "@Hashibutogarasu/utils": "workspace:*",
+    "@karasu-lab/challengetoken": "0.1.0-20bd94f",
+    "@karasu-lab/db": "0.1.0-9f9276e",
+    "@karasu-lab/types": "0.1.0-0e2dcae",
+    "@karasu-lab/ui": "0.1.0-ab4b5a1",
+    "@karasu-lab/utils": "0.1.0-967de79",
     "@base-ui/react": "^1.6.0",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",

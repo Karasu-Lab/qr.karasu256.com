@@ -4,7 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
-  transpilePackages: ['@Hashibutogarasu/ui', '@Hashibutogarasu/utils'],
+  transpilePackages: ['@karasu-lab/ui', '@karasu-lab/utils'],
   devIndicators: false,
 };
 
