@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { getSessionUser } from '@Hashibutogarasu/utils/server';
+import { getSessionUser } from '@karasu-lab/utils/server';
 import { HistoryTable } from '@/components/HistoryTable';
 import { listQrGenerations } from '@/lib/history';
 

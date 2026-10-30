@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import { and, eq, isNull, lt } from 'drizzle-orm';
-import { getDb } from '@Hashibutogarasu/db';
-import { qrGenerations } from '@Hashibutogarasu/db/schema';
-import { MissingEnvError, deleteUploadedImage } from '@Hashibutogarasu/utils/server';
+import { getDb } from '@karasu-lab/db';
+import { qrGenerations } from '@karasu-lab/db/schema';
+import { MissingEnvError, deleteUploadedImage } from '@karasu-lab/utils/server';
 
 /** Returns `CDN_URL`, throwing {@link MissingEnvError} if it's unset. */
 function getImageApiUrl(): string {

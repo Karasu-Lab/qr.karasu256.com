@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { MissingEnvError, deleteUploadedImage, verifyAppJwt } from '@Hashibutogarasu/utils/server';
+import { MissingEnvError, deleteUploadedImage, verifyAppJwt } from '@karasu-lab/utils/server';
 import { deleteQrGenerations } from '@/lib/history';
 
 function getImageApiUrl(): string {

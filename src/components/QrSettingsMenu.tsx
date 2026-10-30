@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
-import { Button, Menu, MenuTrigger, MenuContent, MenuSeparator, SwitchMenuItem } from '@Hashibutogarasu/ui';
+import { Button, Menu, MenuTrigger, MenuContent, MenuSeparator, SwitchMenuItem } from '@karasu-lab/ui';
 import { useAutoRegenerate } from '@/hooks/use-auto-regenerate';
 import { IntervalMenu } from './IntervalMenu';
 

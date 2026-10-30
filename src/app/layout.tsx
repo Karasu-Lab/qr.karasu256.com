@@ -3,10 +3,10 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
-import { PopUpMenuProvider, R2StorageProvider, SessionProvider } from '@Hashibutogarasu/ui';
-import { RedisProvider } from '@Hashibutogarasu/ui/redis';
-import { geistSans, geistMono, notoSansJP } from '@Hashibutogarasu/ui/fonts';
-import { getSessionUser } from '@Hashibutogarasu/utils/server';
+import { PopUpMenuProvider, R2StorageProvider, SessionProvider } from '@karasu-lab/ui';
+import { RedisProvider } from '@karasu-lab/ui/redis';
+import { geistSans, geistMono, notoSansJP } from '@karasu-lab/ui/fonts';
+import { getSessionUser } from '@karasu-lab/utils/server';
 import './globals.css';
 import Header from '@/components/Header';
 
