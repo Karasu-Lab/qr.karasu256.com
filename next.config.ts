@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import { withUi } from '@karasu-lab/ui/next';
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
@@ -8,4 +9,4 @@ const nextConfig: NextConfig = {
   devIndicators: false,
 };
 
-export default withNextIntl(nextConfig);
+export default withUi(withNextIntl(nextConfig));
