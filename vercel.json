@@ -1,4 +1,6 @@
 {
+  "buildCommand": "pnpm build",
+  "installCommand": "printf '//npm.pkg.github.com/:_authToken=%s\n' \"$NODE_AUTH_TOKEN\" >> \"$HOME/.npmrc\" && pnpm install --no-frozen-lockfile",
   "build": {
     "env": {
       "ENABLE_EXPERIMENTAL_COREPACK": "1"
