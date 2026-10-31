@@ -17,7 +17,7 @@
     "@karasu-lab/challengetoken": "0.1.0-20bd94f",
     "@karasu-lab/db": "0.1.0-9f9276e",
     "@karasu-lab/types": "0.1.0-0e2dcae",
-    "@karasu-lab/ui": "0.1.0-170af7a",
+    "@karasu-lab/ui": "0.1.0-4f34abc",
     "@karasu-lab/utils": "0.1.0-967de79",
     "@base-ui/react": "^1.6.0",
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
