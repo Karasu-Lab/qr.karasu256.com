@@ -38,3 +38,6 @@ drizzle/*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Turborepo
+.turbo/
