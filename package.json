@@ -20,7 +20,7 @@
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@karasu-lab/challengetoken": "0.1.0-b34518d",
     "@karasu-lab/db": "0.1.0-84bddbd",
-    "@karasu-lab/types": "0.1.0-1950a9c",
+    "@karasu-lab/types": "0.1.0-7225769",
     "@karasu-lab/ui": "0.1.0-df38f4a",
     "@karasu-lab/utils": "0.1.0-be51f04",
     "@paralleldrive/cuid2": "^3.3.0",
