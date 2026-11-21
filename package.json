@@ -8,10 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:e2e": "playwright test",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate:dev": "dotenv -e .env.development.local -- drizzle-kit migrate",
-    "db:migrate:prod": "dotenv -e .env.production -- drizzle-kit migrate"
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -19,7 +16,6 @@
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@karasu-lab/challengetoken": "0.1.0-8cdc9d3",
-    "@karasu-lab/db": "0.1.0-1012abb",
     "@karasu-lab/types": "0.1.0-80684cd",
     "@karasu-lab/ui": "0.1.0-cff91d7",
     "@karasu-lab/utils": "0.1.0-11f53a9",
@@ -27,13 +23,12 @@
     "@tanstack/react-table": "^8.21.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.44.7",
-    "lucide-react": "^1.21.0",
+    "lucide-react": "^1.74.0",
     "next": "16.2.9",
-    "next-intl": "^4.13.1",
+    "next-intl": "^4.15.1",
     "qrcode": "^1.5.4",
     "react": "19.3.1",
-    "react-dom": "19.2.4",
+    "react-dom": "19.3.1",
     "server-only": "^0.0.1",
     "shadcn": "^4.11.0",
     "tailwind-merge": "^3.6.0",
@@ -46,8 +41,6 @@
     "@types/qrcode": "^1.5.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "dotenv-cli": "^11.0.0",
-    "drizzle-kit": "^0.31.11",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
