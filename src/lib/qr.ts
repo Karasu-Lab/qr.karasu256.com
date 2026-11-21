@@ -14,8 +14,6 @@ import {
   uploadImageAnonymous,
   verifyAppJwt,
 } from '@karasu-lab/utils/server';
-import { getDb } from '@karasu-lab/db';
-import { qrGenerations } from '@karasu-lab/db/schema';
 
 const QR_IMAGE_WIDTH = 512;
 const CACHE_TTL_SECONDS = 60 * 60 * 24;
@@ -116,15 +114,6 @@ async function uploadAnonymous(buffer: Buffer): Promise<{ path: string; url: str
   return { path, url: result.url };
 }
 
-/** Records a generation in the history table; best-effort so a DB outage never breaks the QR response. */
-async function recordGeneration(uid: string | null, fileName: string, url: string): Promise<void> {
-  try {
-    await getDb().insert(qrGenerations).values({ fileName, url, userId: uid });
-  } catch (err) {
-    console.error('Failed to record QR generation history', err);
-  }
-}
-
 /**
  * Generates a QR for `content` (a fresh random id unless the client already
  * predicted one), uploads it under the caller's path scheme, and replaces
@@ -136,8 +125,7 @@ async function recordGeneration(uid: string | null, fileName: string, url: strin
  * The authenticated upload to cdn.karasu256.com is gated on `auth.token`
  * alone, not `auth.cookieHeader`: forwarding the cookie a second hop (this
  * app's own server to cdn.karasu256.com's) is the unreliable mechanism this
- * app moved away from, so it's ignored here even when it did resolve `uid`
- * for the DB record.
+ * app moved away from, so it's ignored here even when it did resolve `uid`.
  */
 async function generateAndCacheQr(
   uid: string | null,
@@ -155,7 +143,6 @@ async function generateAndCacheQr(
 
   await Promise.all([
     writeCachedQr(uid, qr),
-    recordGeneration(uid, path, url),
     uid && auth.token && previous
       ? deleteUploadedImage(previous.url, {
           imageApiUrl: getImageApiUrl(),
